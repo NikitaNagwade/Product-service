@@ -1,0 +1,15 @@
+<div class="admin-container">
+  <h2>All User Purchases</h2>
+  <table *ngIf="purchases.length > 0">
+    <tr><th>User</th><th>Product</th><th>Quantity</th><th>Total Price</th><th>Date</th></tr>
+    <tr *ngFor="let item of purchases">
+      <td>{{ item.user?.name || 'Unknown' }}</td>
+      <td>{{ item.product.name }}</td>
+      <td>{{ item.quantity }}</td>
+      <td>${{ item.totalPrice }}</td>
+      <td>{{ item.purchaseDate | date:'short' }}</td>
+    </tr>
+  </table>
+  <p *ngIf="purchases.length === 0">No purchases found.</p>
+  <button routerLink="/products">Back to Products</button>
+</div>

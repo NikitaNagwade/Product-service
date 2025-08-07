@@ -1,0 +1,55 @@
+<div class="landing-container">
+  <header class="header">
+    <h1>Product Store</h1>
+    <div class="auth-buttons">
+      <button routerLink="/login" class="btn-primary">Login</button>
+      <button routerLink="/register" class="btn-secondary">Register</button>
+    </div>
+  </header>
+
+  <div class="search-section">
+    <input 
+      [(ngModel)]="searchTerm" 
+      (keyup.enter)="onSearch()"
+      placeholder="Search products..." 
+      class="search-input">
+    <button (click)="onSearch()" class="search-btn">Search</button>
+  </div>
+
+  <div class="products-info">
+    <p>Showing {{ products.length }} of {{ totalElements }} products</p>
+  </div>
+
+  <div class="products-grid">
+    <div *ngFor="let product of products" class="product-card">
+      <h3>{{ product.name }}</h3>
+      <p class="price">${{ product.price }}</p>
+      <p class="description">{{ product.description }}</p>
+      <div class="card-actions">
+        <button routerLink="/login" class="btn-primary">Login to Buy</button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="products.length === 0" class="no-products">
+    <p>No products found.</p>
+  </div>
+
+  <div *ngIf="totalPages > 1" class="pagination">
+    <button 
+      (click)="goToPage(currentPage - 1)" 
+      [disabled]="currentPage === 0"
+      class="page-btn">Previous</button>
+    
+    <button 
+      *ngFor="let page of getPages()" 
+      (click)="goToPage(page)"
+      [class.active]="page === currentPage"
+      class="page-btn">{{ page + 1 }}</button>
+    
+    <button 
+      (click)="goToPage(currentPage + 1)" 
+      [disabled]="currentPage === totalPages - 1"
+      class="page-btn">Next</button>
+  </div>
+</div>

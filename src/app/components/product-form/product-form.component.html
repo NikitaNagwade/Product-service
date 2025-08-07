@@ -1,0 +1,14 @@
+<div class="form-container">
+  <h2>{{ isEdit ? 'Edit Product' : 'Add Product' }}</h2>
+  <form (ngSubmit)="saveProduct()">
+    <input [(ngModel)]="product.name" name="name" placeholder="Product Name" required />
+    <input [(ngModel)]="product.price" name="price" type="number" placeholder="Price" required />
+    <textarea [(ngModel)]="product.description" name="description" placeholder="Description" required></textarea>
+    <div class="buttons">
+      <button type="submit">{{ isEdit ? 'Update Product' : 'Add Product' }}</button>
+      <button type="button" routerLink="/products">Cancel</button>
+    </div>
+    <p *ngIf="success" style="color: green">{{ success }}</p>
+    <p *ngIf="error" style="color: red">{{ error }}</p>
+  </form>
+</div>

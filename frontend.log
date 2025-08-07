@@ -1,0 +1,693 @@
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  89.77 kB | 
+main.js             | main          |  71.02 kB | 
+styles.css          | styles        |  10.77 kB | 
+
+                    | Initial total | 171.56 kB
+
+Application bundle generation complete. [10.961 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 72.08 kB | 
+
+Application bundle generation complete. [2.966 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.771 seconds]
+
+✘ [ERROR] NG9: Property 'editProduct' does not exist on type 'ProductListComponent'. [plugin angular-compiler]
+
+    src/app/components/product-list/product-list.component.html:24:39:
+      24 │ ...on *ngIf="isAdmin" (click)="editProduct(product.id)">Edit</button>
+         ╵                                ~~~~~~~~~~~
+
+  Error occurs in the template of component ProductListComponent.
+
+    src/app/components/product-list/product-list.component.ts:12:15:
+      12 │   templateUrl: './product-list.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.450 seconds]
+
+✘ [ERROR] TS2339: Property 'router' does not exist on type 'ProductListComponent'. [plugin angular-compiler]
+
+    src/app/components/product-list/product-list.component.ts:71:9:
+      71 │     this.router.navigate(['/product-form'], { queryParams: { id } });
+         ╵          ~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.447 seconds]
+
+✘ [ERROR] TS2339: Property 'router' does not exist on type 'ProductListComponent'. [plugin angular-compiler]
+
+    src/app/components/product-list/product-list.component.ts:71:9:
+      71 │     this.router.navigate(['/product-form'], { queryParams: { id } });
+         ╵          ~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  89.77 kB | 
+main.js             | main          |  73.15 kB | 
+styles.css          | styles        |  10.77 kB | 
+
+                    | Initial total | 173.69 kB
+
+Application bundle generation complete. [0.595 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 74.25 kB | 
+
+Application bundle generation complete. [1.271 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.12 kB | 
+
+Application bundle generation complete. [0.850 seconds]
+
+Component update sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.26 kB | 
+
+Application bundle generation complete. [2.297 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.40 kB | 
+
+Application bundle generation complete. [1.947 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.54 kB | 
+
+Application bundle generation complete. [0.781 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.56 kB | 
+
+Application bundle generation complete. [0.418 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.59 kB | 
+
+Application bundle generation complete. [0.434 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.62 kB | 
+
+Application bundle generation complete. [0.281 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.64 kB | 
+
+Application bundle generation complete. [0.274 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.67 kB | 
+
+Application bundle generation complete. [0.344 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.67 kB | 
+
+Application bundle generation complete. [0.709 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.401 seconds]
+
+✘ [ERROR] TS2769: No overload matches this call.
+  Overload 1 of 2, '(observerOrNext?: Partial<Observer<Object>> | ((value: Object) => void) | undefined): Subscription', gave the following error.
+    Type '(products: any[]) => void' is not assignable to type '(value: Object) => void'.
+      Types of parameters 'products' and 'value' are incompatible.
+        The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+          Type 'Object' is missing the following properties from type 'any[]': length, pop, push, concat, and 29 more.
+  Overload 2 of 2, '(next?: ((value: Object) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription', gave the following error.
+    Object literal may only specify known properties, and 'next' does not exist in type '(value: Object) => void'. [plugin angular-compiler]
+
+    src/app/components/product-form/product-form.component.ts:43:6:
+      43 │       next: (products: any[]) => {
+         ╵       ~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.203 seconds]
+
+✘ [ERROR] TS2769: No overload matches this call.
+  Overload 1 of 2, '(observerOrNext?: Partial<Observer<Object>> | ((value: Object) => void) | undefined): Subscription', gave the following error.
+    Type '(products: any[]) => void' is not assignable to type '(value: Object) => void'.
+      Types of parameters 'products' and 'value' are incompatible.
+        The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+          Type 'Object' is missing the following properties from type 'any[]': length, pop, push, concat, and 29 more.
+  Overload 2 of 2, '(next?: ((value: Object) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription', gave the following error.
+    Object literal may only specify known properties, and 'next' does not exist in type '(value: Object) => void'. [plugin angular-compiler]
+
+    src/app/components/product-form/product-form.component.ts:43:6:
+      43 │       next: (products: any[]) => {
+         ╵       ~~~~
+
+
+✘ [ERROR] TS2345: Argument of type 'null' is not assignable to parameter of type 'number'. [plugin angular-compiler]
+
+    src/app/components/product-form/product-form.component.ts:55:40:
+      55 │ ...ctService.updateProduct(this.product.id, this.product).subscribe({
+         ╵                            ~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.608 seconds]
+
+✘ [ERROR] TS2769: No overload matches this call.
+  Overload 1 of 2, '(observerOrNext?: Partial<Observer<Object>> | ((value: Object) => void) | undefined): Subscription', gave the following error.
+    Type '(products: any[]) => void' is not assignable to type '(value: Object) => void'.
+      Types of parameters 'products' and 'value' are incompatible.
+        The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+          Type 'Object' is missing the following properties from type 'any[]': length, pop, push, concat, and 29 more.
+  Overload 2 of 2, '(next?: ((value: Object) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription', gave the following error.
+    Object literal may only specify known properties, and 'next' does not exist in type '(value: Object) => void'. [plugin angular-compiler]
+
+    src/app/components/product-form/product-form.component.ts:43:6:
+      43 │       next: (products: any[]) => {
+         ╵       ~~~~
+
+
+✘ [ERROR] TS2345: Argument of type 'null' is not assignable to parameter of type 'number'. [plugin angular-compiler]
+
+    src/app/components/product-form/product-form.component.ts:55:40:
+      55 │ ...ctService.updateProduct(this.product.id, this.product).subscribe({
+         ╵                            ~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.529 seconds]
+
+✘ [ERROR] TS2769: No overload matches this call.
+  Overload 1 of 2, '(observerOrNext?: Partial<Observer<Object>> | ((value: Object) => void) | undefined): Subscription', gave the following error.
+    Type '(products: any[]) => void' is not assignable to type '(value: Object) => void'.
+      Types of parameters 'products' and 'value' are incompatible.
+        The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+          Type 'Object' is missing the following properties from type 'any[]': length, pop, push, concat, and 29 more.
+  Overload 2 of 2, '(next?: ((value: Object) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription', gave the following error.
+    Object literal may only specify known properties, and 'next' does not exist in type '(value: Object) => void'. [plugin angular-compiler]
+
+    src/app/components/product-form/product-form.component.ts:43:6:
+      43 │       next: (products: any[]) => {
+         ╵       ~~~~
+
+
+✘ [ERROR] TS2345: Argument of type 'null' is not assignable to parameter of type 'number'. [plugin angular-compiler]
+
+    src/app/components/product-form/product-form.component.ts:55:40:
+      55 │ ...ctService.updateProduct(this.product.id, this.product).subscribe({
+         ╵                            ~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.476 seconds]
+
+▲ [WARNING] Duplicate member "updateProduct" in class body [duplicate-class-member]
+
+    src/app/services/product.service.ts:19:4:
+      19 │     updateProduct(id, product) {
+         ╵     ~~~~~~~~~~~~~
+
+  The original member "updateProduct" is here:
+
+    src/app/services/product.service.ts:16:4:
+      16 │     updateProduct(id, product) {
+         ╵     ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2769: No overload matches this call.
+  Overload 1 of 2, '(observerOrNext?: Partial<Observer<Object>> | ((value: Object) => void) | undefined): Subscription', gave the following error.
+    Type '(products: any[]) => void' is not assignable to type '(value: Object) => void'.
+      Types of parameters 'products' and 'value' are incompatible.
+        The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+          Type 'Object' is missing the following properties from type 'any[]': length, pop, push, concat, and 29 more.
+  Overload 2 of 2, '(next?: ((value: Object) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription', gave the following error.
+    Object literal may only specify known properties, and 'next' does not exist in type '(value: Object) => void'. [plugin angular-compiler]
+
+    src/app/components/product-form/product-form.component.ts:43:6:
+      43 │       next: (products: any[]) => {
+         ╵       ~~~~
+
+
+✘ [ERROR] TS2393: Duplicate function implementation. [plugin angular-compiler]
+
+    src/app/services/product.service.ts:20:2:
+      20 │   updateProduct(id: any, product: any) {
+         ╵   ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2393: Duplicate function implementation. [plugin angular-compiler]
+
+    src/app/services/product.service.ts:24:2:
+      24 │   updateProduct(id: number, product: any) {
+         ╵   ~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.829 seconds]
+
+▲ [WARNING] Duplicate member "updateProduct" in class body [duplicate-class-member]
+
+    src/app/services/product.service.ts:19:4:
+      19 │     updateProduct(id, product) {
+         ╵     ~~~~~~~~~~~~~
+
+  The original member "updateProduct" is here:
+
+    src/app/services/product.service.ts:16:4:
+      16 │     updateProduct(id, product) {
+         ╵     ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2769: No overload matches this call.
+  Overload 1 of 2, '(observerOrNext?: Partial<Observer<Object>> | ((value: Object) => void) | undefined): Subscription', gave the following error.
+    Type '(products: any[]) => void' is not assignable to type '(value: Object) => void'.
+      Types of parameters 'products' and 'value' are incompatible.
+        The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+          Type 'Object' is missing the following properties from type 'any[]': length, pop, push, concat, and 29 more.
+  Overload 2 of 2, '(next?: ((value: Object) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription', gave the following error.
+    Object literal may only specify known properties, and 'next' does not exist in type '(value: Object) => void'. [plugin angular-compiler]
+
+    src/app/components/product-form/product-form.component.ts:45:6:
+      45 │       next: (products: any[]) => {
+         ╵       ~~~~
+
+
+✘ [ERROR] TS2393: Duplicate function implementation. [plugin angular-compiler]
+
+    src/app/services/product.service.ts:20:2:
+      20 │   updateProduct(id: any, product: any) {
+         ╵   ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2393: Duplicate function implementation. [plugin angular-compiler]
+
+    src/app/services/product.service.ts:24:2:
+      24 │   updateProduct(id: number, product: any) {
+         ╵   ~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.644 seconds]
+
+▲ [WARNING] Duplicate member "updateProduct" in class body [duplicate-class-member]
+
+    src/app/services/product.service.ts:19:4:
+      19 │     updateProduct(id, product) {
+         ╵     ~~~~~~~~~~~~~
+
+  The original member "updateProduct" is here:
+
+    src/app/services/product.service.ts:16:4:
+      16 │     updateProduct(id, product) {
+         ╵     ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2769: No overload matches this call.
+  Overload 1 of 2, '(observerOrNext?: Partial<Observer<Object>> | ((value: Object) => void) | undefined): Subscription', gave the following error.
+    Type '(products: any[]) => void' is not assignable to type '(value: Object) => void'.
+      Types of parameters 'products' and 'value' are incompatible.
+        The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+          Type 'Object' is missing the following properties from type 'any[]': length, pop, push, concat, and 29 more.
+  Overload 2 of 2, '(next?: ((value: Object) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription', gave the following error.
+    Object literal may only specify known properties, and 'next' does not exist in type '(value: Object) => void'. [plugin angular-compiler]
+
+    src/app/components/product-form/product-form.component.ts:45:6:
+      45 │       next: (products: any[]) => {
+         ╵       ~~~~
+
+
+✘ [ERROR] TS2393: Duplicate function implementation. [plugin angular-compiler]
+
+    src/app/services/product.service.ts:20:2:
+      20 │   updateProduct(id: any, product: any) {
+         ╵   ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2393: Duplicate function implementation. [plugin angular-compiler]
+
+    src/app/services/product.service.ts:24:2:
+      24 │   updateProduct(id: number, product: any) {
+         ╵   ~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [3.628 seconds]
+
+▲ [WARNING] Duplicate member "updateProduct" in class body [duplicate-class-member]
+
+    src/app/services/product.service.ts:19:4:
+      19 │     updateProduct(id, product) {
+         ╵     ~~~~~~~~~~~~~
+
+  The original member "updateProduct" is here:
+
+    src/app/services/product.service.ts:16:4:
+      16 │     updateProduct(id, product) {
+         ╵     ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2769: No overload matches this call.
+  Overload 1 of 2, '(observerOrNext?: Partial<Observer<Object>> | ((value: Object) => void) | undefined): Subscription', gave the following error.
+    Type '(products: any[]) => void' is not assignable to type '(value: Object) => void'.
+      Types of parameters 'products' and 'value' are incompatible.
+        The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+          Type 'Object' is missing the following properties from type 'any[]': length, pop, push, concat, and 29 more.
+  Overload 2 of 2, '(next?: ((value: Object) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription', gave the following error.
+    Object literal may only specify known properties, and 'next' does not exist in type '(value: Object) => void'. [plugin angular-compiler]
+
+    src/app/components/product-form/product-form.component.ts:45:6:
+      45 │       next: (products: any[]) => {
+         ╵       ~~~~
+
+
+✘ [ERROR] TS2393: Duplicate function implementation. [plugin angular-compiler]
+
+    src/app/services/product.service.ts:20:2:
+      20 │   updateProduct(id: any, product: any) {
+         ╵   ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2393: Duplicate function implementation. [plugin angular-compiler]
+
+    src/app/services/product.service.ts:24:2:
+      24 │   updateProduct(id: number, product: any) {
+         ╵   ~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.687 seconds]
+
+▲ [WARNING] Duplicate member "updateProduct" in class body [duplicate-class-member]
+
+    src/app/services/product.service.ts:19:4:
+      19 │     updateProduct(id, product) {
+         ╵     ~~~~~~~~~~~~~
+
+  The original member "updateProduct" is here:
+
+    src/app/services/product.service.ts:16:4:
+      16 │     updateProduct(id, product) {
+         ╵     ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2393: Duplicate function implementation. [plugin angular-compiler]
+
+    src/app/services/product.service.ts:20:2:
+      20 │   updateProduct(id: any, product: any) {
+         ╵   ~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2393: Duplicate function implementation. [plugin angular-compiler]
+
+    src/app/services/product.service.ts:24:2:
+      24 │   updateProduct(id: number, product: any) {
+         ╵   ~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  89.77 kB | 
+main.js             | main          |  77.74 kB | 
+styles.css          | styles        |  10.77 kB | 
+
+                    | Initial total | 178.28 kB
+
+Application bundle generation complete. [0.367 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 78.24 kB | 
+
+Application bundle generation complete. [0.957 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.007 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.739 seconds]
+
+✘ [ERROR] TS-991010: template must be a string
+  Value could not be determined statically. [plugin angular-compiler]
+
+    src/app/components/admin-purchases/admin-purchases.component.ts:10:12:
+      10 │   template: `
+         ╵             ^
+
+  A string value could not be determined statically.
+
+    src/app/components/admin-purchases/admin-purchases.component.ts:19:16:
+      19 │           <td>${{ item.totalPrice }}</td>
+         ╵                 ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS18004: No value exists in scope for the shorthand property 'item'. Either declare one or provide an initializer. [plugin angular-compiler]
+
+    src/app/components/admin-purchases/admin-purchases.component.ts:19:18:
+      19 │           <td>${{ item.totalPrice }}</td>
+         ╵                   ~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/components/admin-purchases/admin-purchases.component.ts:19:22:
+      19 │           <td>${{ item.totalPrice }}</td>
+         ╵                       ^
+
+
+✘ [ERROR] TS-991010: template must be a string
+  Value could not be determined statically. [plugin angular-compiler]
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:10:12:
+      10 │   template: `
+         ╵             ^
+
+  A string value could not be determined statically.
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:18:16:
+      18 │           <td>${{ item.product.price }}</td>
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS18004: No value exists in scope for the shorthand property 'item'. Either declare one or provide an initializer. [plugin angular-compiler]
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:18:18:
+      18 │           <td>${{ item.product.price }}</td>
+         ╵                   ~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:18:22:
+      18 │           <td>${{ item.product.price }}</td>
+         ╵                       ^
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.559 seconds]
+
+✘ [ERROR] TS-991010: template must be a string
+  Value could not be determined statically. [plugin angular-compiler]
+
+    src/app/components/admin-purchases/admin-purchases.component.ts:10:12:
+      10 │   template: `
+         ╵             ^
+
+  A string value could not be determined statically.
+
+    src/app/components/admin-purchases/admin-purchases.component.ts:19:16:
+      19 │           <td>${{ item.totalPrice }}</td>
+         ╵                 ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS18004: No value exists in scope for the shorthand property 'item'. Either declare one or provide an initializer. [plugin angular-compiler]
+
+    src/app/components/admin-purchases/admin-purchases.component.ts:19:18:
+      19 │           <td>${{ item.totalPrice }}</td>
+         ╵                   ~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/components/admin-purchases/admin-purchases.component.ts:19:22:
+      19 │           <td>${{ item.totalPrice }}</td>
+         ╵                       ^
+
+
+✘ [ERROR] Expected identifier but found ":"
+
+    src/app/components/admin-purchases/admin-purchases.component.ts:32:24:
+      32 │           <td>${{ item, : .totalPrice }}</td>
+         ╵                         ^
+
+
+✘ [ERROR] TS-991010: template must be a string
+  Value could not be determined statically. [plugin angular-compiler]
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:10:12:
+      10 │   template: `
+         ╵             ^
+
+  A string value could not be determined statically.
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:18:16:
+      18 │           <td>${{ item.product.price }}</td>
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS18004: No value exists in scope for the shorthand property 'item'. Either declare one or provide an initializer. [plugin angular-compiler]
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:18:18:
+      18 │           <td>${{ item.product.price }}</td>
+         ╵                   ~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:18:22:
+      18 │           <td>${{ item.product.price }}</td>
+         ╵                       ^
+
+
+✘ [ERROR] Expected identifier but found ":"
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:31:24:
+      31 │           <td>${{ item, : .product.price }}</td>
+         ╵                         ^
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.766 seconds]
+
+✘ [ERROR] TS-991010: template must be a string
+  Value could not be determined statically. [plugin angular-compiler]
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:10:12:
+      10 │   template: `
+         ╵             ^
+
+  A string value could not be determined statically.
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:18:16:
+      18 │           <td>${{ item.product.price }}</td>
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS18004: No value exists in scope for the shorthand property 'item'. Either declare one or provide an initializer. [plugin angular-compiler]
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:18:18:
+      18 │           <td>${{ item.product.price }}</td>
+         ╵                   ~~~~
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:18:22:
+      18 │           <td>${{ item.product.price }}</td>
+         ╵                       ^
+
+
+✘ [ERROR] Expected identifier but found ":"
+
+    src/app/components/admin-wishlists/admin-wishlists.component.ts:31:24:
+      31 │           <td>${{ item, : .product.price }}</td>
+         ╵                         ^
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          |  91.59 kB | 
+polyfills.js        | polyfills     |  89.77 kB | 
+styles.css          | styles        |  10.77 kB | 
+
+                    | Initial total | 192.13 kB
+
+Application bundle generation complete. [0.886 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [2.577 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 109.85 kB | 
+
+Application bundle generation complete. [0.772 seconds]
+
+Page reload sent to client(s).

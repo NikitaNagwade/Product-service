@@ -1,0 +1,17 @@
+<div class="header">
+  <h2>My Wishlist</h2>
+  <button routerLink="/products">Back to Products</button>
+</div>
+<table *ngIf="wishlistItems.length > 0">
+  <tr><th>Product</th><th>Price</th><th>Description</th><th>Actions</th></tr>
+  <tr *ngFor="let item of wishlistItems">
+    <td>{{ item.product.name }}</td>
+    <td>${{ item.product.price }}</td>
+    <td>{{ item.product.description }}</td>
+    <td>
+      <button (click)="addToCart(item.product)">Add to Cart</button>
+      <button (click)="removeFromWishlist(item.id)">Remove</button>
+    </td>
+  </tr>
+</table>
+<p *ngIf="wishlistItems.length === 0">Your wishlist is empty</p>

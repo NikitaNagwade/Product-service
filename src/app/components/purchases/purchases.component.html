@@ -1,0 +1,14 @@
+<div class="header">
+  <h2>My Purchases</h2>
+  <button routerLink="/products">Back to Products</button>
+</div>
+<table *ngIf="purchases.length > 0">
+  <tr><th>Product</th><th>Quantity</th><th>Total Price</th><th>Purchase Date</th></tr>
+  <tr *ngFor="let purchase of purchases">
+    <td>{{ purchase.product.name }}</td>
+    <td>{{ purchase.quantity }}</td>
+    <td>${{ purchase.totalPrice }}</td>
+    <td>{{ purchase.purchaseDate | date }}</td>
+  </tr>
+</table>
+<p *ngIf="purchases.length === 0">No purchases yet</p>

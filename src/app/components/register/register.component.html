@@ -1,0 +1,20 @@
+<div class="auth-container">
+  <h2>Register</h2>
+  <form (ngSubmit)="register()">
+    <input [(ngModel)]="name" name="name" placeholder="Full Name" (blur)="validateName()" required />
+    <p *ngIf="nameError" style="color: red; font-size: 12px;">{{ nameError }}</p>
+    
+    <input [(ngModel)]="email" name="email" type="email" placeholder="Email" (blur)="validateEmail()" required />
+    <p *ngIf="emailError" style="color: red; font-size: 12px;">{{ emailError }}</p>
+    
+    <input [(ngModel)]="mobileNo" name="mobileNo" placeholder="Mobile Number" (blur)="validateMobile()" required />
+    <p *ngIf="mobileError" style="color: red; font-size: 12px;">{{ mobileError }}</p>
+    
+    <input [(ngModel)]="password" name="password" placeholder="Password" type="password" required />
+    
+    <button type="submit">Register</button>
+    <p *ngIf="success" style="color: green">{{ success }}</p>
+    <p *ngIf="error" style="color: red">{{ error }}</p>
+  </form>
+  <p>Already have an account? <a routerLink="/login">Login here</a></p>
+</div>

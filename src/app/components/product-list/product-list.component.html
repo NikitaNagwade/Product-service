@@ -1,0 +1,28 @@
+<div class="header">
+  <h2>Product List ({{ products.length }} items)</h2>
+  <div>
+    <button *ngIf="!isAdmin" routerLink="/cart">Cart</button>
+    <button *ngIf="!isAdmin" routerLink="/wishlist">Wishlist</button>
+    <button *ngIf="!isAdmin" routerLink="/purchases">My Purchases</button>
+    <button *ngIf="isAdmin" routerLink="/product-form">Add Product</button>
+    <button *ngIf="isAdmin" routerLink="/admin-wishlists">All Wishlists</button>
+    <button *ngIf="isAdmin" routerLink="/admin-purchases">All Purchases</button>
+    <button (click)="logout()">Logout</button>
+  </div>
+</div>
+<div *ngIf="products.length === 0">No products found. Check console for errors.</div>
+<table *ngIf="products.length > 0">
+  <tr><th>Name</th><th>Price</th><th>Description</th><th>Actions</th></tr>
+  <tr *ngFor="let product of products">
+    <td>{{ product.name }}</td>
+    <td>${{ product.price }}</td>
+    <td>{{ product.description }}</td>
+    <td>
+      <button *ngIf="!isAdmin" (click)="addToCart(product)">Add to Cart</button>
+      <button *ngIf="!isAdmin" (click)="addToWishlist(product)">Wishlist</button>
+      <button *ngIf="!isAdmin" (click)="purchaseProduct(product)">Buy Now</button>
+      <button *ngIf="isAdmin" (click)="editProduct(product.id)">Edit</button>
+      <button *ngIf="isAdmin" (click)="deleteProduct(product.id)">Delete</button>
+    </td>
+  </tr>
+</table>
